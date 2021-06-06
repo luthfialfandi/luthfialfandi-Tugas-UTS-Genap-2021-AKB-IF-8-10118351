@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".main.profil.ProfilActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/profile"
+                />
+
+            <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:labelText="NIM"
+                android:layout_marginTop="15dp"
+                android:paddingTop="30dp"
+                app:secondaryColor="#175873"
+                app:enabled="false">
+
+                <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10118351"
+                    android:textColor="@color/black"/>
+            </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+            <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:labelText="Nama"
+                android:layout_marginTop="10dp"
+                app:secondaryColor="#175873"
+                app:enabled="false">
+
+                <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Luthfi Alfandi"
+                    android:textColor="@color/black"/>
+            </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+            <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:labelText="Kelas"
+                android:layout_marginTop="10dp"
+                app:secondaryColor="#175873"
+                app:enabled="false">
+
+                <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IF-8"
+                    android:textColor="@color/black"/>
+            </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+            <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:labelText="Email"
+                android:layout_marginTop="10dp"
+                app:secondaryColor="#175873"
+                app:enabled="false">
+
+                <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="luthfialfandi@gmail.com"
+                    android:textColor="@color/black"/>
+            </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bar"
+        app:itemIconTint="@color/nav_color"
+        app:itemTextColor="@color/nav_color"
+        app:menu="@menu/menu_bottom" />
+
+</RelativeLayout>

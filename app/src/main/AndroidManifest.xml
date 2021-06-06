@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tugas_uts_10118351">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/notes_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Tugas_UTS_10118351">
+        <activity android:name="com.example.tugas_uts_10118351.main.catatan.SaveKategoriActivity"></activity>
+        <activity android:name="com.example.tugas_uts_10118351.main.catatan.UpdateCatatanActivity" />
+        <activity android:name="com.example.tugas_uts_10118351.main.catatan.CatatanActivity" />
+        <activity android:name="com.example.tugas_uts_10118351.main.catatan.DaftarCatatanActivity" />
+        <activity android:name="com.example.tugas_uts_10118351.main.informasi.InformasiActivity" />
+        <activity android:name="com.example.tugas_uts_10118351.main.profil.ProfilActivity" />
+        <activity android:name="com.example.tugas_uts_10118351.main.catatan.KategoriActivity"/>
+        <activity android:name="com.example.tugas_uts_10118351.main.menu.MenuActivity" />
+        <activity android:name="com.example.tugas_uts_10118351.splash_screen.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.tugas_uts_10118351.main.MainActivity" />
+    </application>
+
+</manifest>
